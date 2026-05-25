@@ -1,0 +1,108 @@
+
+
+===
+Source: https://artificialanalysis.ai/models
+Date: 2026-05-25 11:43 UTC
+Title: Comparison of AI Models across Intelligence, Performance, and Price
+===
+
+Comparison of Models: Intelligence, Performance & Price Analysis
+Intelligence
+Output Speed (tokens/s)
+Latency (seconds)
+Price ($ per M tokens)
+Context Window
+Highlights
+Intelligence
+Artificial Analysis Intelligence Index
+Artificial Analysis Intelligence Index v4.0 includes: GDPval-AA, 𝜏²-Bench Telecom, Terminal-Bench Hard, SciCode, AA-LCR, AA-Omniscience, IFBench, Humanity's Last Exam, GPQA Diamond, CritPt. See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+Artificial Analysis Intelligence Index by Open Weights / Proprietary
+Artificial Analysis Intelligence Index v4.0 includes: GDPval-AA, 𝜏²-Bench Telecom, Terminal-Bench Hard, SciCode, AA-LCR, AA-Omniscience, IFBench, Humanity's Last Exam, GPQA Diamond, CritPt. See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+Indicates whether the model weights are available. Models are labelled as 'Commercial Use Restricted' if the weights are available but commercial use is limited (typically requires obtaining a paid license).
+Intelligence Evaluations
+Agentic real-world work tasks, (ELO-500)/2000
+Agentic coding & terminal use
+Agentic tool use
+Long context reasoning
+Knowledge
+1 - hallucination rate
+Reasoning & knowledge
+Scientific reasoning
+Coding
+Instruction following
+Physics reasoning
+Long-horizon agentic tasks
+Visual reasoning
+While model intelligence generally translates across use cases, specific evaluations may be more relevant for certain use cases.
+Artificial Analysis Intelligence Index v4.0 includes: GDPval-AA, 𝜏²-Bench Telecom, Terminal-Bench Hard, SciCode, AA-LCR, AA-Omniscience, IFBench, Humanity's Last Exam, GPQA Diamond, CritPt. See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+Artificial Analysis Omniscience
+AA-Omniscience Index
+AA-Omniscience Index (higher is better) measures knowledge reliability and hallucination. It rewards correct answers, penalizes hallucinations, and has no penalty for refusing to answer. Scores range from -100 to 100, where 0 means as many correct as incorrect answers, and negative scores mean more incorrect than correct.
+Openness
+Artificial Analysis Openness Index: Results
+Intelligence Index Comparisons
+Intelligence vs. Price
+While higher intelligence models are typically more expensive, they do not all follow the same price-quality curve.
+Artificial Analysis Intelligence Index v4.0 includes: GDPval-AA, 𝜏²-Bench Telecom, Terminal-Bench Hard, SciCode, AA-LCR, AA-Omniscience, IFBench, Humanity's Last Exam, GPQA Diamond, CritPt. See Intelligence Index methodology for further details, including a breakdown of each evaluation and how we run them.
+Price per token, shown in USD per million tokens. Price is a blend of cache hit, input, and output token prices using the selected ratio (default 7:2:1 cache-input-output).
+The blended cache price shown here uses cache hit price only. Other caching costs differ by provider:
+- Anthropic: charges a separate cache write fee, with different rates for 5-minute and 1-hour TTLs (1-hour TTL is more expensive). Blended price charts use Anthropic cache write price for the input leg.
+- Google (Vertex/Gemini): charges a per-hour cache storage fee in addition to cache hit pricing. Some providers also use tiered pricing for prompts above 200K tokens.
+- OpenAI, DeepSeek, others: typically charge only cache hit pricing with no write or storage fee.
+See Prompt Caching for the full breakdown.
+Figures represent performance of the model's first-party API (e.g. OpenAI for o1) or the median across providers where a first-party API is not available (e.g. Meta's Llama models).
+Intelligence Index Token Use & Cost
+Output Tokens Used to Run Artificial Analysis Intelligence Index
+The number of tokens required to run all evaluations in the Artificial Analysis Intelligence Index (excluding repeats).
+Cost to Run Artificial Analysis Intelligence Index
+The cost to run the evaluations in the Artificial Analysis Intelligence Index, calculated using the model's input and output token pricing and the number of tokens used across evaluations (excluding repeats).
+Context Window
+Context Window
+Larger context windows are relevant to RAG (Retrieval Augmented Generation) LLM workflows which typically involve reasoning and information retrieval of large amounts of data.
+Maximum number of combined input & output tokens. Output tokens commonly have a significantly lower limit (varied by model).
+PricingPricing now includes “Cache Hit Price” with new blend ratios.
+Pricing: Cache Hit, Input, and Output
+Price per token for cached prompts (previously processed), typically offering a significant discount compared to regular input price, represented as USD per million tokens. The values shown here are the cache hit price; cache write and cache storage are billed separately and vary by provider — see "Cache pricing by provider" for detail.
+Price per token included in the request/message sent to the API, represented as USD per million Tokens.
+The blended cache price shown here uses cache hit price only. Other caching costs differ by provider:
+- Anthropic: charges a separate cache write fee, with different rates for 5-minute and 1-hour TTLs (1-hour TTL is more expensive). Blended price charts use Anthropic cache write price for the input leg.
+- Google (Vertex/Gemini): charges a per-hour cache storage fee in addition to cache hit pricing. Some providers also use tiered pricing for prompts above 200K tokens.
+- OpenAI, DeepSeek, others: typically charge only cache hit pricing with no write or storage fee.
+See Prompt Caching for the full breakdown.
+Price per token generated by the model (received from the API), represented as USD per million Tokens.
+Figures represent performance of the model's first-party API (e.g. OpenAI for o1) or the median across providers where a first-party API is not available (e.g. Meta's Llama models).
+Speed
+Measured by Output Speed (tokens per second)
+Output Speed
+Tokens per second received while the model is generating tokens (ie. after first chunk has been received from the API for models which support streaming).
+Figures represent performance of the model's first-party API (e.g. OpenAI for o1) or the median across providers where a first-party API is not available (e.g. Meta's Llama models).
+Output Speed vs. Price
+Tokens per second received while the model is generating tokens (ie. after first chunk has been received from the API for models which support streaming).
+Price per token, shown in USD per million tokens. Price is a blend of cache hit, input, and output token prices using the selected ratio (default 7:2:1 cache-input-output).
+Latency
+Measured by Time (seconds) to First Token
+Latency: Time To First Answer Token
+Time to first answer token received, in seconds, after API request sent. For reasoning models, this includes the 'thinking' time of the model before providing an answer. For models which do not support streaming, this represents time to receive the completion.
+End-to-End Response Time
+Seconds to output 500 tokens, calculated based on time to first token, 'thinking' time for reasoning models, and output speed
+End-to-End Response Time
+Seconds to receive a 500 token response. Key components:
+- Input time: Time to receive the first response token
+- Thinking time (only for reasoning models): Time reasoning models spend outputting tokens to reason prior to providing an answer. Amount of tokens based on the average reasoning tokens across a diverse set of 60 prompts (methodology details).
+- Answer time: Time to generate 500 output tokens, based on output speed
+Figures represent performance of the model's first-party API (e.g. OpenAI for o1) or the median across providers where a first-party API is not available (e.g. Meta's Llama models).
+Model Size (Open Weights Models Only)
+Model Size: Total and Active Parameters
+The total number of trainable weights and biases in the model, expressed in billions. These parameters are learned during training and determine the model's ability to process and generate responses.
+The number of parameters actually executed during each inference forward pass, expressed in billions. For Mixture of Experts (MoE) models, a routing mechanism selects a subset of experts per token, resulting in fewer active than total parameters. Dense models use all parameters, so active equals total.
+Frequently Asked Questions
+GPT-5.5 (xhigh) currently leads the Artificial Analysis Intelligence Index with a score of 60, out of 386 models evaluated.
+The top AI models by Intelligence Index are: 1. GPT-5.5 (xhigh) (60), 2. GPT-5.5 (high) (59), 3. Claude Opus 4.7 (Adaptive Reasoning, Max Effort) (57), 4. Gemini 3.1 Pro Preview (57), 5. GPT-5.4 (xhigh) (57).
+Mercury 2 is the fastest at 900.3 tokens per second, followed by Granite 3.3 8B (Non-reasoning) (438.3 t/s) and Granite 4.0 H Small (368.3 t/s).
+Qwen3.5 0.8B (Non-reasoning) is the most affordable at $0.01 per 1M tokens (blended), followed by Qwen3.5 0.8B (Reasoning) ($0.01) and Gemma 3n E4B Instruct ($0.02).
+Command A+ has the lowest time to first token at 0.34s, followed by Qwen3.5 2B (Non-reasoning) (0.38s) and Qwen3.5 4B (Non-reasoning) (0.42s).
+Kimi K2.6 is the highest-ranked open weights model with an Intelligence Index score of 54. There are 244 open weights models out of 386 total evaluated.
+The top open weights AI models by Intelligence Index are: 1. Kimi K2.6 (54), 2. MiMo-V2.5-Pro (54), 3. DeepSeek V4 Pro (Reasoning, Max Effort) (52).
+GPT-5.5 (xhigh) leads among 200 reasoning models with an Intelligence Index score of 60. Reasoning models use extended thinking to work through complex problems before providing answers.
+Models are compared across multiple dimensions including intelligence (quality), pricing, output speed (tokens per second), latency (time to first token), end-to-end response time, and context window size. Performance metrics are measured directly using standardized prompts across 523 models.
+Click on any model name or row in the charts to view its dedicated page with detailed metrics and direct comparisons against similar models. You can also use the model selector to customize which models appear in each chart. View the leaderboard
